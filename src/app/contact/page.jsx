@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
-export const metadata = {
-    title: 'Contact',
-    description: 'Contact Page'
-}
+// export const metadata = {
+//     title: 'Contact',
+//     description: 'Contact Page'
+// }
 
 export default function Contact()
 {
