@@ -50,8 +50,8 @@ export default function Home() {
             
             <h2 className="text-5xl py-2 text-blue-500 font-bold md:text-6xl">Ethan Muir</h2>
             
-            <h3 className="text-2xl py-2 md:text-3xl text-black dark:text-white">Computer Engineering Student and Developper</h3>
-            <p className="text-md py-5 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
+            <h3 className="text-xl mx-auto py-2 md:text-3xl text-black dark:text-white">Computer Engineering Student and Developper</h3>
+            <p className="text-md px-2 py-5 leading-7 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
               Hi! I'm Ethan, a motivated 4th year computer engineering 
               honours student at the University of Guelph looking to apply an extensive skillset to your oganization
             </p>
