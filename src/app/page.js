@@ -4,7 +4,7 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import Image from "next/image";
 import mountains from "../public/mountains.JPG";
-import ncr from "../public/ncr.JPG";
+import ncr from "../public/ncr.jpg";
 import rogers from "../public/rogers.png";
 import hardware from "../public/hardware.png";
 import software from "../public/software.png";
