@@ -27,7 +27,7 @@ export default function Home() {
           <nav className="pt-10 px-10 flex justify-between">
             <h1>                
               <a 
-                  className="bg-gradient-to-r from-blue-500 to-teal-200 text-black font-semibold px-4 py-4 rounded-md "
+                  className="bg-white text-white font-semibold px-4 py-4 rounded-md "
                   href="../public/resume/resume.pdf" download
                 >
                   Download Resume
