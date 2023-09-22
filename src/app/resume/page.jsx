@@ -1,9 +1,9 @@
 import Resumer from "src/app/resume/public/resumer.png"
 import Image from "next/image";
-export const metadata = {
-    title: 'Resume',
-    description: 'resume page'
-}
+// export const metadata = {
+//     title: 'Resume',
+//     description: 'resume page'
+// }
 
 export default function Resume()
 {
