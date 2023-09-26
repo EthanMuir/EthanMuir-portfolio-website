@@ -30,26 +30,19 @@ export default async function ContacApi(req, res) {
         });
     });
 
-    try{
-        const mail = await transporter.sendMail({
-            from:"ethanmuir12@gmail.com",
-            to: "ethanmuir12@gmail.com",
-            replyTo: email,
-            subject: 'Contact form submission',
-            html:`
-            <p>Name: ${first} ${last}</p>
-            <p>Phone: ${phone}</p>
-            <p>Email: ${email}</p>
-            <p>Message: ${message}</p>
-            `
-        })
-        console.log("Message Sent:", mail.messageId);
-    } catch(error) {
-        console.log(error)
-        res.status(500).json({
-            message: "Could not send email. Your message was not sent :(",
-        })
-    }
+    const mail = await transporter.sendMail({
+        from:"ethanmuir12@gmail.com",
+        to: "ethanmuir12@gmail.com",
+        replyTo: email,
+        subject: 'Contact form submission',
+        html:`
+        <p>Name: ${first} ${last}</p>
+        <p>Phone: ${phone}</p>
+        <p>Email: ${email}</p>
+        <p>Message: ${message}</p>
+        `
+    })
+    console.log("Message Sent:", mail.messageId);
 
     await new Promise((resolve, reject) => {
         // send mail
