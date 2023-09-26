@@ -1,13 +1,9 @@
 'use client';
+
 import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import Image from "next/image";
-import ncr from "../public/ncr.jpg";
-import rogers from "../public/rogers.png";
-import hardware from "../public/hardware.png";
-import software from "../public/software.png";
-import headshot from "../public/headshot.png";
 import { useState } from 'react';
 
 export default function Home() {
@@ -44,7 +40,7 @@ export default function Home() {
           <div className="text-center p-10 md:px-20 lg:px-40">
 
             <div>
-              <Image src={headshot} width={300} height={300}  className="mx-auto pt-2 pb-5"/>
+              <Image src="/headshot.png" width={300} height={300}  className="mx-auto pt-2 pb-5"/>
             </div>
             
             <h2 className="text-5xl py-2 text-blue-500 font-bold md:text-6xl">Ethan Muir</h2>
@@ -73,7 +69,7 @@ export default function Home() {
 
           <div className="lg:flex gap-10 ">
             <div className="bg-gradient-to-b from-teal-200 to-blue-500 text-center shadow-lg p-10 rounded-xl my-10 mx-10 basis-1/2">
-              <Image  src={ncr} width={600} height={600} className="mx-auto shadow-lg rounded-xl" />
+              <Image  src="/ncr.jpg" width={600} height={600} className="mx-auto shadow-lg rounded-xl" />
               <h3 className="text-2xl text-green-600 font-semibold pt-3">Skills:</h3>
               <p className="text-gray-800 py1 hover:text-xl">- REST APIs</p>
               <p className="text-gray-800 py1 hover:text-xl">- Object Oriented Programming (OOP)</p>
@@ -85,7 +81,7 @@ export default function Home() {
               <p className="text-gray-800 py1 hover:text-xl">- Kubernetes</p>
             </div>
             <div className="bg-gradient-to-b from-blue-500 to-teal-200 text-center shadow-lg p-10 rounded-xl my-10 mx-10 basis-1/2">
-              <Image  src={rogers} width={600} height={600} className="bg-white mx-auto shadow-lg rounded-xl" />
+              <Image  src="/rogers.png" width={600} height={600} className="bg-white mx-auto shadow-lg rounded-xl" />
               <h3 className="text-2xl pt-3 text-red-500 font-semibold">Skills:</h3>
               <p className="text-gray-800 py1 hover:text-xl">- Github</p>
               <p className="text-gray-800 py1 hover:text-xl">- Object Oriented Programming (OOP)</p>
@@ -106,7 +102,7 @@ export default function Home() {
           <div className="lg:flex gap-10">
             <div className="bg-gradient-to-b from-teal-200 to-blue-500 text-center shadow-lg p-10 rounded-xl my-10 mx-10 basis-1/2">
             <h2 className=" font-bold py-2 text-black">Software </h2>
-              <Image  src={software} width={200} height={200} className="bg-white mx-auto shadow-lg rounded-xl" />
+              <Image  src="/software.png" width={200} height={200} className="bg-white mx-auto shadow-lg rounded-xl" />
               <h3 className="text-2xl font-semibold pt-3 text-black">Classes:</h3>
               <p className="text-gray-800 py1 hover:text-xl">- Object Oriented Programming (OOP)</p>
               <p className="text-gray-800 py1 hover:text-xl">- Large Scale Software Architecture Engineerimg</p>
@@ -117,7 +113,7 @@ export default function Home() {
             </div>
             <div className="bg-gradient-to-b from-blue-500 to-teal-200 text-center shadow-lg p-10 rounded-xl my-10 mx-10 basis-1/2">
               <h2 className=" font-bold py-2 text-black">Hardware</h2>
-              <Image  src={hardware} width={200} height={200} className="bg-white mx-auto shadow-lg rounded-xl" />
+              <Image  src="/hardware.png" width={200} height={200} className="bg-white mx-auto shadow-lg rounded-xl" />
               <h3 className="text-2xl pt-3 font-semibold text-black">Classes:</h3>
               <p className="text-gray-800 py1 hover:text-xl">- Embedded Reconfigurable Computing Systems</p>
               <p className="text-gray-800 py1 hover:text-xl">- Microcomputer Interfacing</p>
@@ -129,7 +125,7 @@ export default function Home() {
           </div>
           </section>
           <div className="bg-gradient-to-b from-blue-500 to-teal-200 p-10 mt-20">
-            <Image src="/public/mountains.jpg" className="shadow-lg rounded-3xl"/>
+            <Image src="/mountains.jpg" width={200}  height={220} className="shadow-lg rounded-3xl"/>
           </div>
         </section>
 

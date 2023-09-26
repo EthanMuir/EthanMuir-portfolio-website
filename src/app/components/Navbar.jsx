@@ -1,9 +1,7 @@
 "use client"
-import {BsFillMoonStarsFill} from 'react-icons/bs';
+
 import { useState } from "react"
 import Link from "next/link"
-import {AioutlineMenu, AiOutlineClose} from "react-icons/ai"
-import { BsFillAspectRatioFill } from "react-icons/bs"
 
 export default function Navbar()
 {
