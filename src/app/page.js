@@ -3,7 +3,7 @@ import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import Image from "next/image";
-import mountains from "../public/mountains.JPG";
+import mountains from "../public/mountains.jpg";
 import ncr from "../public/ncr.jpg";
 import rogers from "../public/rogers.png";
 import hardware from "../public/hardware.png";
