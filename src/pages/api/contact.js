@@ -29,33 +29,23 @@ export default async function ContacApi(req, res) {
             }
         });
     });
-
-    const mail = await transporter.sendMail({
-        from:"ethanmuir12@gmail.com",
-        to: "ethanmuir12@gmail.com",
-        replyTo: email,
-        subject: 'Contact form submission',
-        html:`
-        <p>Name: ${first} ${last}</p>
-        <p>Phone: ${phone}</p>
-        <p>Email: ${email}</p>
-        <p>Message: ${message}</p>
-        `
+    
+    await new Promise(() => {
+        const mail = transporter.sendMail({
+            from:"ethanmuir12@gmail.com",
+            to: "ethanmuir12@gmail.com",
+            replyTo: email,
+            subject: 'Contact form submission',
+            html:`
+            <p>Name: ${first} ${last}</p>
+            <p>Phone: ${phone}</p>
+            <p>Email: ${email}</p>
+            <p>Message: ${message}</p>
+            `
+        })
+        console.log("Message Sent:", mail.messageId);
     })
-    console.log("Message Sent:", mail.messageId);
-
-    await new Promise((resolve, reject) => {
-        // send mail
-        transporter.sendMail(mail, (err, info) => {
-            if (err) {
-                console.error(err);
-                reject(err);
-            } else {
-                console.log(info);
-                resolve(info);
-            }
-        });
-    });
+    
 
     return res.status(200).json({message: "success" })
 }
