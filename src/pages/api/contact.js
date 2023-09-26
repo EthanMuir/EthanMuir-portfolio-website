@@ -50,5 +50,19 @@ export default async function ContacApi(req, res) {
             message: "Could not send email. Your message was not sent :(",
         })
     }
+
+    await new Promise((resolve, reject) => {
+        // send mail
+        transporter.sendMail(mail, (err, info) => {
+            if (err) {
+                console.error(err);
+                reject(err);
+            } else {
+                console.log(info);
+                resolve(info);
+            }
+        });
+    });
+
     return res.status(200).json({message: "success" })
 }
