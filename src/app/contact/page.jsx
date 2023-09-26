@@ -65,7 +65,7 @@ export default function Contact()
               required
             />
           </div>
-          <div className="name block">
+          <div className="first name block">
             <div>
               <label htmlFor="first">First Name</label>
               <input className="text-black"
@@ -76,8 +76,10 @@ export default function Contact()
                 required
               />
             </div>
+
+          </div>
             <div>
-              <label htmlFor="last">Last Name</label>
+              <label className='flex' htmlFor="last">Last Name</label>
               <input className="text-black"
                 id="last"
                 type="text"
@@ -86,7 +88,6 @@ export default function Contact()
                 required
               />
             </div>
-          </div>
           <div className="message block">
             <label htmlFor="message">Message</label>
             <textarea className="text-black" id="message" rows="6" name="message"></textarea>
