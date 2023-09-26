@@ -3,7 +3,6 @@ import Head from "next/head";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import Image from "next/image";
-import mountains from "../public/mountains.jpg";
 import ncr from "../public/ncr.jpg";
 import rogers from "../public/rogers.png";
 import hardware from "../public/hardware.png";
@@ -130,7 +129,7 @@ export default function Home() {
           </div>
           </section>
           <div className="bg-gradient-to-b from-blue-500 to-teal-200 p-10 mt-20">
-            <Image src={mountains} className="shadow-lg rounded-3xl"/>
+            <Image src="/public/mountains.jpg" className="shadow-lg rounded-3xl"/>
           </div>
         </section>
 
