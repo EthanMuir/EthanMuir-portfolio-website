@@ -92,8 +92,8 @@ export default function Contact()
             <label htmlFor="message">Message</label>
             <textarea className="text-black" id="message" rows="6" name="message"></textarea>
           </div>
-          <div className=" button block">
-            <button className='text-black bg-gradient-to-r from-blue-500 to-teal-200' type="submit">Submit</button>
+          <div className="button block">
+            <button className='text-white bg-gradient-to-r from-blue-500 to-teal-200' type="submit">Submit</button>
           </div>
         </form>
       );
