@@ -125,7 +125,6 @@ export default function Home() {
           </div>
           </section>
           <div className="bg-gradient-to-b from-blue-500 to-teal-200 p-10 mt-20">
-            <Image src="/mountains.jpg" width={200}  height={220} className="shadow-lg rounded-3xl"/>
           </div>
         </section>
 
