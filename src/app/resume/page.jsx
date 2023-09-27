@@ -8,7 +8,7 @@ export default function Resume()
 {
     return (
         <main className=" bg-gray-1000">
-            <div className="pt-10">
+            <div className="pt-20">
                <Image src="/resumer.png" height={20} width={741}  className=" rounded-xl rounded-b-xl mx-auto"/>
             </div>
         </main>
