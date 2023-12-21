@@ -117,7 +117,7 @@ export default function Home() {
               <h3 className="text-2xl pt-3 font-semibold text-black">Classes:</h3>
               <p className="text-gray-800 py1 hover:text-xl">- Embedded Reconfigurable Computing Systems</p>
               <p className="text-gray-800 py1 hover:text-xl">- Microcomputer Interfacing</p>
-              <p className="text-gray-800 py1 hover:text-xl">- Digital System Design</p>
+              <p className="text-gray-800 py1 hover:text-xl">- Digital Systems Design</p>
               <p className="text-gray-800 py1 hover:text-xl">- Computer Organization</p>
               <p className="text-gray-800 py1 hover:text-xl">- Micro and Nano Scale Electronics</p>
               <p className="text-gray-800 py1 hover:text-xl">- Electronic Devices</p>
