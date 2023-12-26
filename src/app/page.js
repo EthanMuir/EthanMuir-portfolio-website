@@ -48,7 +48,7 @@ export default function Home() {
             <h3 className="text-xl px-14 mx-10 md:px-auto py-2 md:text-3xl text-black dark:text-white">Computer Engineering Student and Developer</h3>
             <p className="flex text-md px-16 md:px-auto py-5 leading-7 text-gray-800 md:text-xl lg:px-auto max-w-lg mx-auto dark:text-gray-500">
               Hi! I'm Ethan, a motivated 4th year computer engineering 
-              honours student at the University of Guelph looking to apply an extensive skillset to your oganization
+              honours student at the University of Guelph looking to apply an extensive skillset to your organization
             </p>
           </div>
           <div className="text-5xl text-black flex justify-center gap-16 py-3">
